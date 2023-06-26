@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"FinalProject_Rental-Car-Management/database"
-	"FinalProject_Rental-Car-Management/models"
+	"Backend_WebProg_RentalCarManagement/database"
+	"Backend_WebProg_RentalCarManagement/models"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"

@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"FinalProject_Rental-Car-Management/database"
-	"FinalProject_Rental-Car-Management/models"
+	"Backend_WebProg_RentalCarManagement/database"
+	"Backend_WebProg_RentalCarManagement/models"
 	"encoding/json"
 	"net/http"
 

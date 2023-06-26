@@ -1,7 +1,7 @@
 package database
 
 import (
-	"FinalProject_Rental-Car-Management/models"
+	"Backend_WebProg_RentalCarManagement/models"
 	"os"
 
 	"gorm.io/driver/mysql"

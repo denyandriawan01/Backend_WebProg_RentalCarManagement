@@ -3,7 +3,7 @@ package main
 import (
 	"Backend_WebProg_RentalCarManagement/controller"
 	"Backend_WebProg_RentalCarManagement/database"
-	"Backend_WebProg_RentalCarManagement/utils/initializer"
+	"Backend_WebProg_RentalCarManagement/initializer"
 	"os"
 
 	"github.com/gin-gonic/gin"

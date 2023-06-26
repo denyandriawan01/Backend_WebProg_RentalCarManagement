@@ -1,4 +1,4 @@
-# FinalProject_Rental-Car-Management
+# Backend_Rental-Car-Management
 
 Proyek Manajemen Persewaan Mobil adalah aplikasi CRUD sederhana yang dibangun menggunakan bahasa pemrograman Go (Golang) dengan menggunakan framework Gin dan GORM untuk mengelola data persewaan mobil. Aplikasi ini memungkinkan pengguna untuk melakukan operasi dasar seperti membuat, membaca, memperbarui, dan menghapus data pada berbagai entitas yang terkait dengan persewaan mobil.
 

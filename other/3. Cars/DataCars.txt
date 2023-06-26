@@ -1,0 +1,139 @@
+// Contoh 1
+{
+  "brand": "Toyota",
+  "model": "Avanza",
+  "type": "MPV",
+  "capacity": "7 seats",
+  "year": 2019,
+  "registration_number": "B 1234 ABC",
+  "vin": "JTDKN3DU4A3000001",
+  "engine_number": "K3VE123456",
+  "color": "Silver",
+  "is_available": true
+}
+
+// Contoh 2
+{
+  "brand": "Honda",
+  "model": "City",
+  "type": "Sedan",
+  "capacity": "5 seats",
+  "year": 2020,
+  "registration_number": "B 5678 DEF",
+  "vin": "JHMZF1D68CS100002",
+  "engine_number": "L15Z123456",
+  "color": "White",
+  "is_available": true
+}
+
+// Contoh 3
+{
+  "brand": "Daihatsu",
+  "model": "Terios",
+  "type": "SUV",
+  "capacity": "5 seats",
+  "year": 2018,
+  "registration_number": "B 9012 GHI",
+  "vin": "JDA1111113A000003",
+  "engine_number": "3SZ123456",
+  "color": "Black",
+  "is_available": true
+}
+
+// Contoh 4
+{
+  "brand": "Suzuki",
+  "model": "Ertiga",
+  "type": "MPV",
+  "capacity": "7 seats",
+  "year": 2021,
+  "registration_number": "B 3456 JKL",
+  "vin": "KL5TN6AHHKC000004",
+  "engine_number": "K15B123456",
+  "color": "Red",
+  "is_available": true
+}
+
+// Contoh 5
+{
+  "brand": "Mitsubishi",
+  "model": "Xpander",
+  "type": "MPV",
+  "capacity": "7 seats",
+  "year": 2022,
+  "registration_number": "B 7890 MNO",
+  "vin": "MMT111111BB000005",
+  "engine_number": "4A91ABC123",
+  "color": "Grey",
+  "is_available": true
+}
+
+// Contoh 6
+{
+  "brand": "Toyota",
+  "model": "Innova",
+  "type": "MPV",
+  "capacity": "8 seats",
+  "year": 2017,
+  "registration_number": "B 2345 PQR",
+  "vin": "KUN40A00000000006",
+  "engine_number": "2KD567890",
+  "color": "Silver",
+  "is_available": true
+}
+
+// Contoh 7
+{
+  "brand": "Toyota",
+  "model": "Hiace",
+  "type": "Van",
+  "capacity": "12 seats",
+  "year": 2020,
+  "registration_number": "B 6789 STU",
+  "vin": "JTF111111G3000007",
+  "engine_number": "1GD123456",
+  "color": "White",
+  "is_available": true
+}
+
+// Contoh 8
+{
+  "brand": "Honda",
+  "model": "CR-V",
+  "type": "SUV",
+  "capacity": "5 seats",
+  "year": 2019,
+  "registration_number": "B 1234 VWX",
+  "vin": "5J6RW1H82KA100008",
+  "engine_number": "R20A123456",
+  "color": "Blue",
+  "is_available": true
+}
+
+// Contoh 9
+{
+  "brand": "Nissan",
+  "model": "Grand Livina",
+  "type": "MPV",
+  "capacity": "7 seats",
+  "year": 2016,
+  "registration_number": "B 5678 YZ",
+  "vin": "MMNAFAD123FN00009",
+  "engine_number": "HR15DE12345",
+  "color": "Black",
+  "is_available": true
+}
+
+// Contoh 10
+{
+  "brand": "Isuzu",
+  "model": "MU-X",
+  "type": "SUV",
+  "capacity": "7 seats",
+  "year": 2023,
+  "registration_number": "B 9012 ABC",
+  "vin": "MPA1234000U00010",
+  "engine_number": "4JJ123456",
+  "color": "Grey",
+  "is_available": true
+}

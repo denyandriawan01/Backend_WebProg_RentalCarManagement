@@ -4,6 +4,8 @@ type Rental struct {
 	RentalID    int64  `gorm:"primaryKey" json:"rental_id"`
 	UserID      int64  `json:"user_id"`
 	CarID       int64  `json:"car_id"`
+	NIK         string `json:"nik"`
+	Name        string `json:"name"`
 	UsageRegion string `json:"usage_region"`
 	RentalDate  string `json:"rental_date"`
 	ReturnDate  string `json:"return_date"`

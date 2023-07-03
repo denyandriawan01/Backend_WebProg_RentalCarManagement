@@ -11,5 +11,6 @@ type Car struct {
 	VIN                string `gorm:"type:varchar(50)" json:"vin"`
 	EngineNumber       string `gorm:"type:varchar(50)" json:"engine_number"`
 	Color              string `gorm:"type:varchar(50)" json:"color"`
+	Image              string `gorm:"type:varchar(50)" json:"image"`
 	IsAvailable        bool   `gorm:"type:boolean" json:"is_available"`
 }

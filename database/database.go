@@ -19,7 +19,6 @@ func ConnectDatabase() {
 	database.AutoMigrate(&models.MaintenanceHistory{})
 	database.AutoMigrate(&models.Taxes{})
 	database.AutoMigrate(&models.Payment{})
-	database.AutoMigrate(&models.User{})
 	database.AutoMigrate(&models.Car{})
 
 	DB = database

@@ -17,9 +17,6 @@ func init() {
 func main() {
 	r := gin.Default()
 
-	// Users Routes
-	r.POST("/api/users", controller.UserCreate)
-
 	// Cars Routes
 	r.GET("/api/cars", controller.CarsIndex)
 	r.GET("/api/cars/:id", controller.CarsShow)
@@ -41,12 +38,6 @@ func main() {
 	r.POST("/api/payments", controller.PaymentCreate)
 	r.PUT("/api/payments/:id", controller.PaymentUpdate)
 	r.DELETE("/api/payments", controller.PaymentDelete)
-
-	// Users Routes
-	r.GET("/api/users", controller.UserIndex)
-	r.GET("/api/users/:id", controller.UserShow)
-	r.PUT("/api/users/:id", controller.UserUpdate)
-	r.DELETE("/api/users", controller.UserDelete)
 
 	// Rentals Routes
 	r.GET("/api/rentals", controller.RentalIndex)

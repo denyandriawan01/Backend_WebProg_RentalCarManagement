@@ -22,7 +22,7 @@ func PaymentIndex(c *gin.Context) {
 		return
 	}
 
-	if err := database.DB.Preload("Rental").Preload("Rental.User").Preload("Rental.Car").Find(&payment).Error; err != nil {
+	if err := database.DB.Preload("Rental").Preload("Rental.Car").Find(&payment).Error; err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"message": "Failed to retrieve payment data"})
 		return
 	}
@@ -44,7 +44,7 @@ func PaymentShow(c *gin.Context) {
 	id := c.Param("id")
 	var payment models.Payment
 
-	if err := database.DB.Preload("Rental").Preload("Rental.User").Preload("Rental.Car").First(&payment, id).Error; err != nil {
+	if err := database.DB.Preload("Rental").Preload("Rental.Car").First(&payment, id).Error; err != nil {
 		if err == gorm.ErrRecordNotFound {
 			c.JSON(http.StatusNotFound, gin.H{"message": "Data pembayaran tidak ditemukan"})
 			return
@@ -70,7 +70,7 @@ func PaymentCreate(c *gin.Context) {
 			return err
 		}
 
-		if err := tx.Preload("Rental").Preload("Rental.User").Preload("Rental.Car").First(&payment, payment.PaymentID).Error; err != nil {
+		if err := tx.Preload("Rental").Preload("Rental.Car").First(&payment, payment.PaymentID).Error; err != nil {
 			return err
 		}
 

@@ -15,7 +15,7 @@ func RentalIndex(c *gin.Context) {
 	var rental []models.Rental
 	var count int64
 
-	if result := database.DB.Preload("User").Preload("Car").Find(&rental); result.Error != nil {
+	if result := database.DB.Preload("Car").Find(&rental); result.Error != nil {
 		c.JSON(http.StatusConflict, gin.H{
 			"message": "Conflict occurred",
 		})
@@ -39,7 +39,7 @@ func RentalShow(c *gin.Context) {
 	id := c.Param("id")
 	var rental models.Rental
 
-	if err := database.DB.Preload("User").Preload("Car").First(&rental, id).Error; err != nil {
+	if err := database.DB.Preload("Car").First(&rental, id).Error; err != nil {
 		switch err {
 		case gorm.ErrRecordNotFound:
 			c.AbortWithStatusJSON(http.StatusNotFound, gin.H{"message": "Data rental tidak ditemukan"})
@@ -79,7 +79,7 @@ func RentalCreate(c *gin.Context) {
 			return err
 		}
 
-		if err := tx.Preload("User").Preload("Car").First(&rental, rental.RentalID).Error; err != nil {
+		if err := tx.Preload("Car").First(&rental, rental.RentalID).Error; err != nil {
 			return err
 		}
 
